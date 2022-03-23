@@ -30,7 +30,7 @@ The best way to illustrate Airflow is to go through a very simple workflow and t
 
 ### __Overview of workflow__
 
-![T](../images/IMG1_SampleRawWorkflow.JPG)
+![T](./IMG1_SampleRawWorkflow.JPG)
 
 This is a visual representation of tasks that are being completed to output a Pandas dataframe named `df_complaints_status`. Starting from left to right we see that we have three tasks in parallel that need to run before a central dataframe combines all three. Following on, a json config file is written based on criteria from the dataframe. The model then runs with both the config file and the df_complaints_status file.
 
@@ -247,7 +247,7 @@ get_CRM_task >> get_complaints_task>> get_compliance_task >> make_street_upper_t
 
 A visual representation of this transformed DAG is here:
 
-![T](../images/IMG2_mode_dag.JPG)
+![T](./IMG2_mode_dag.JPG)
 
 The DAG UI is one way that is easy to use for monitoring and controlling DAGs. Below is an example.
 
